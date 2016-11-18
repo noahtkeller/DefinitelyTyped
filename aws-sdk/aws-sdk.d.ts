@@ -306,23 +306,23 @@ declare module "aws-sdk" {
     constructor(options?: any);
     endpoint: Endpoint;
 
-    addPermission(params: SQS.AddPermissionParams, callback: (err: AwsError, data: any) => void): void;
-    changeMessageVisibility(params: SQS.ChangeMessageVisibilityParams, callback: (err: AwsError, data: any) => void): void;
-    changeMessageVisibilityBatch(params: SQS.ChangeMessageVisibilityBatchParams, callback: (err: AwsError, data: SQS.ChangeMessageVisibilityBatchResponse) => void): void;
-    createQueue(params: SQS.CreateQueueParams, callback: (err: AwsError, data: SQS.CreateQueueResult) => void): void;
-    deleteMessage(params: SQS.DeleteMessageParams, callback: (err: AwsError, data: any) => void): void;
-    deleteMessageBatch(params: SQS.DeleteMessageBatchParams, callback: (err: AwsError, data: SQS.DeleteMessageBatchResult) => void): void;
-    deleteQueue(params: { QueueUrl: string; }, callback: (err: AwsError, data: any) => void): void;
-    getQueueAttributes(params: SQS.GetQueueAttributesParams, callback: (err: AwsError, data: SQS.GetQueueAttributesResult) => void): void;
-    getQueueUrl(params: SQS.GetQueueUrlParams, callback: (err: AwsError, data: { QueueUrl: string; }) => void): void;
-    listDeadLetterSourceQueues(params: { QueueUrl: string }, callback: (err: AwsError, data: { queueUrls: string[] }) => void): void;
-    listQueues(params: { QueueNamePrefix?: string }, callback: (err: AwsError, data: { QueueUrls: string[] }) => void): void;
-    purgeQueue(params: { QueueUrl: string }, callback: (err: AwsError, data: any) => void): void;
-    receiveMessage(params: SQS.ReceiveMessageParams, callback: (err: AwsError, data: SQS.ReceiveMessageResult) => void): void;
-    removePermission(params: { QueueUrl: string, Label: string }, callback: (err: AwsError, data: any) => void): void;
-    sendMessage(params: SQS.SendMessageParams, callback: (err: AwsError, data: SQS.SendMessageResult) => void): void;
-    sendMessageBatch(params: SQS.SendMessageBatchParams, callback: (err: AwsError, data: SQS.SendMessageBatchResult) => void): void;
-    setQueueAttributes(params: SQS.SetQueueAttributesParams, callback: (err: AwsError, data: any) => void): void;
+    addPermission(params: SQS.AddPermissionParams, callback?: (err: AwsError, data: any) => void): void;
+    changeMessageVisibility(params: SQS.ChangeMessageVisibilityParams, callback?: (err: AwsError, data: any) => void): void;
+    changeMessageVisibilityBatch(params: SQS.ChangeMessageVisibilityBatchParams, callback?: (err: AwsError, data: SQS.ChangeMessageVisibilityBatchResponse) => void): void;
+    createQueue(params: SQS.CreateQueueParams, callback?: (err: AwsError, data: SQS.CreateQueueResult) => void): void;
+    deleteMessage(params: SQS.DeleteMessageParams, callback?: (err: AwsError, data: any) => void): void;
+    deleteMessageBatch(params: SQS.DeleteMessageBatchParams, callback?: (err: AwsError, data: SQS.DeleteMessageBatchResult) => void): void;
+    deleteQueue(params: { QueueUrl: string; }, callback?: (err: AwsError, data: any) => void): void;
+    getQueueAttributes(params: SQS.GetQueueAttributesParams, callback?: (err: AwsError, data: SQS.GetQueueAttributesResult) => void): void;
+    getQueueUrl(params: SQS.GetQueueUrlParams, callback?: (err: AwsError, data: { QueueUrl: string; }) => void): void;
+    listDeadLetterSourceQueues(params: { QueueUrl: string }, callback?: (err: AwsError, data: { queueUrls: string[] }) => void): void;
+    listQueues(params: { QueueNamePrefix?: string }, callback?: (err: AwsError, data: { QueueUrls: string[] }) => void): void;
+    purgeQueue(params: { QueueUrl: string }, callback?: (err: AwsError, data: any) => void): void;
+    receiveMessage(params: SQS.ReceiveMessageParams, callback?: (err: AwsError, data: SQS.ReceiveMessageResult) => void): void;
+    removePermission(params: { QueueUrl: string, Label: string }, callback?: (err: AwsError, data: any) => void): void;
+    sendMessage(params: SQS.SendMessageParams, callback?: (err: AwsError, data: SQS.SendMessageResult) => void): void;
+    sendMessageBatch(params: SQS.SendMessageBatchParams, callback?: (err: AwsError, data: SQS.SendMessageBatchResult) => void): void;
+    setQueueAttributes(params: SQS.SetQueueAttributesParams, callback?: (err: AwsError, data: any) => void): void;
   }
 
   export class SES {
